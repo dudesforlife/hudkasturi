@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUD KASTURI - PASTI WANGI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #473100;
+            color: #f7e7a1;
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 32px auto;
+            background: rgba(36, 24, 0, 0.97);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            padding: 32px 24px 24px 24px;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            gap: 36px;
+            align-items: flex-start;
+        }
+        .benefits-image-row {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .benefits-list {
+            flex: 2;
+            margin: 0;
+            padding-left: 18px;
+        }
+        .right-col {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .poster-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #f7e7a1;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .poster-subtitle {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ffe066;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .poster-desc {
+            text-align: center;
+            color: #ffe066;
+            margin-bottom: 18px;
+            font-size: 1rem;
+        }
+        .poster-section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffe066;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 18px;
+            padding-left: 18px;
+        }
+        li {
+            margin-bottom: 7px;
+            font-size: 1rem;
+        }
+        .quote {
+            font-style: italic;
+            color: #ffe066;
+            margin-bottom: 12px;
+        }
+        .contact {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffe066;
+            margin-bottom: 6px;
+        }
+        .price {
+            font-size: 1rem;
+            color: #ffe066;
+            margin-bottom: 16px;
+        }
+        .product-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 180px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+            background: #fff;
+        }
+        .order-form {
+            background: #2a1c00;
+            border-radius: 12px;
+            padding: 20px 16px 12px 16px;
+            margin-top: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .form-group {
+            margin-bottom: 13px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #ffe066;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #bfa640;
+            border-radius: 6px;
+            background: #f7e7a1;
+            color: #473100;
+            font-size: 1rem;
+        }
+        input:focus, textarea:focus {
+            outline: 2px solid #ffe066;
+        }
+        .order-btn {
+            width: 100%;
+            background: linear-gradient(90deg, #ffe066 60%, #bfa640 100%);
+            color: #473100;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 0;
+            cursor: pointer;
+            margin-top: 6px;
+            transition: background 0.2s;
+        }
+        .order-btn:hover {
+            background: linear-gradient(90deg, #f7e7a1 60%, #ffe066 100%);
+        }
+        @media (max-width: 900px) {
+            .flex-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .benefits-image-row {
+                flex-direction: column;
+            }
+            .right-col {
+                margin-top: 14px;
+                justify-content: flex-start;
+            }
+            .product-img {
+                max-width: 140px;
+            }
+        }
+        @media (max-width: 500px) {
+            .container {
+                padding: 12px 2vw 18px 2vw;
+            }
+            .poster-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="poster-title">HUD KASTURI</div>
+    <div class="poster-subtitle">PASTI WANGI</div>
+    <div class="poster-desc">Amalan Harian Untuk Ketenangan Jiwa &amp; Perlindungan</div>
+    <div class="poster-section-title">KHASIAT KASTURI HITAM</div>
+    <div class="flex-container benefits-image-row">
+        <ul class="benefits-list">
+            <li>Mengatasi gangguan jin, sihir, santau & saka</li>
+            <li>Penawar hysteria & menyedarkan orang pengsan</li>
+            <li>Menenangkan jiwa & menghilangkan rasa gemetar</li>
+            <li>Mengurangkan kebimbangan & debaran jantung</li>
+            <li>Mencerdaskan akal & melegakan sesak nafas (asma)</li>
+            <li>Memperkuatkan organ dalaman & membuang angin</li>
+            <li>Menawar racun & bisa binatang</li>
+            <li>Mencegah penyakit, angin ahmar & akit kapala</li>
+            <li>Melindungi dari gigitan nyamuk dan lalat</li>
+        </ul>
+        <div class="right-col">
+            <img class="product-img" src="bottle.png" alt="Hud Kasturi 3ml Roll-on" />
+        </div>
+    </div>
+    <div class="quote">“Sebaik-baik wangian adalah minyak kasturi”</div>
+    <div class="price">3ml RM15 sahaja</div>
+    <div class="order-instruction" style="margin-bottom:10px;font-weight:600;color:#ffe066;">Sila isi untuk order..</div>
+    <form class="order-form" id="orderForm">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat</label>
+                <textarea id="address" name="address" rows="2" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Kuantiti</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+            </div>
+            <div class="form-group">
+                <label for="kasturiType">Jenis Hud Kasturi <span style='font-weight:normal;'>(pilihan)</span></label>
+                <select id="kasturiType" name="kasturiType">
+                    <option value="">-- Pilih Jenis Kasturi --</option>
+                    <option value="Hud Kasturi Putih Susu">Hud Kasturi Putih Susu</option>
+                    <option value="Hud Kasturi Kristal">Hud Kasturi Kristal</option>
+                    <option value="Hud Kasturi Emas">Hud Kasturi Emas</option>
+                    <option value="Hud Kasturi Hitam">Hud Kasturi Hitam</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nombor Telefon</label>
+                <input type="tel" id="phone" name="phone" required />
+            </div>
+            <button type="submit" class="order-btn">Order Sekarang</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name = document.getElementById('name').value.trim();
+            var address = document.getElementById('address').value.trim();
+            var quantity = document.getElementById('quantity').value.trim();
+            var kasturiType = document.getElementById('kasturiType').value;
+            var phone = document.getElementById('phone').value.trim();
+            var msg = `Assalamualaikum, saya ingin membuat pesanan Hud Kasturi.\n\nNama: ${name}\nAlamat: ${address}\nKuantiti: ${quantity}`;
+            if (kasturiType) {
+                msg += `\nJenis Hud Kasturi: ${kasturiType}`;
+            }
+            msg += `\nNo. Telefon: ${phone}`;
+            var waUrl = `https://wa.me/60134769332?text=${encodeURIComponent(msg)}`;
+            window.open(waUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
